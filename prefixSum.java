@@ -15,7 +15,7 @@ public class prefixSum {
         int []pref=new int[n];
         pref[0]=arr[0];
         for(int i=1;i<n;i++){
-            pref[i]=pref[i+1]+arr[i];
+            pref[i]=pref[i-1]+arr[i];
         }
         return pref;
     }
